@@ -518,7 +518,7 @@ body.hidden #hamburger span {
 @media screen and (max-width: 500px) {
   .main-box {
     left: 22%;
-    width: 300px;
+    width: 75%;
     height: 228px;
   }
 }
@@ -532,7 +532,7 @@ body.hidden #hamburger span {
 }
 
 .main-myname {
-  width: 400px;
+  width: 65%;
   height: 122px;
   position: absolute;
   top: 500px;
@@ -566,7 +566,7 @@ body.hidden #hamburger span {
   font-size: 30px;
   font-family: "Monotype Corsiva";
   color: #358b81;
-  width: 100%;
+  width: 88%;
   position: absolute;
   top: 0px;
   left: 30px;
