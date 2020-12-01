@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://tomap.co/ZP_reset.css" />
+  <link rel="stylesheet" href="css/style.css" media="all" />
+</head>
+<body>
+  <img src="img/足あとleft.png" alt="" class="leg-left">
+  <img src="img/足あとright.png" alt="" class="leg-right">
+  <div class="inner">
+    <div class="hamburger-action">
+      <div class="hamburger-action-inner">
+        <nav>
+          <ul class="header-ul">
+            <li class="header-ul-li"><a href="#intro" class="header-ul-li-a">Introduce</a></li>
+            <li class="header-ul-li"><a href="#work" class="header-ul-li-a">Works</a></li>
+            <li class="header-ul-li"><a href="#job" class="header-ul-li-a">Jobs</a></li>
+            <li class="header-ul-li"><a href="#contact" class="header-ul-li-a">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <header class="header">
+      <nav>
+        <ul class="header-ul">
+          <li class="header-ul-li"><a href="#intro" class="header-ul-li-a">Introduce</a></li>
+          <li class="header-ul-li"><a href="#work" class="header-ul-li-a">Works</a></li>
+          <li class="header-ul-li"><a href="#job" class="header-ul-li-a">Jobs</a></li>
+          <li class="header-ul-li"><a href="#contact" class="header-ul-li-a">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+  
+    <main class="main">
+      <h2 class="main-title">
+        <span class="main-title-first">P</span><span class="small-letter">ort</span>
+        <span class="main-title-first">f</span><span class="small-letter">olio</span>
+      </h2>
+      <div id="slideshow" class="main-box">
+        <div class="main-box-posi">
+          <img src="img/mount1.jpg" alt="" class="main-box-posi-img zoom">
+          <img src="img/waterfall2.jpg" alt="" class="main-box-posi-img">
+        </div>
+      </div>
+      <div class="main-myname">
+        <div class="main-myname-box">
+          <p class="main-myname-box-en">Yamanada Kyogo</p>
+          <p class="main-myname-box-ja">山名田 恭吾</p>
+        </div>
+      </div>
+    </main>
+
+
+    <section class="intro" id="intro">
+      <h2 class="main-title">
+        <span class="main-title-first">I</span>
+        <span class="small-letter">ntroduce</span>
+        <span class="main-title-first">M</span>
+        <span class="small-letter">yself</span>
+      </h2>
+
+      <div class="intro-box">
+        <div class="intro-h3">Web製作・経歴</div>
+        <table class="table">
+          <tr class="table-tr">
+            <th class="table-tr-th">学習言語</th>
+            <th class="table-tr-th">学習到達度</th>
+          </tr>
+          <tr class="table-tr">
+            <td class="table-tr-td">HTML</td>
+            <td class="table-tr-td">～6ヵ月</td>
+          </tr>
+          <tr class="table-tr">
+            <td class="table-tr-td">css</td>
+            <td class="table-tr-td">～6ヵ月</td>
+          </tr>
+          <tr class="table-tr">
+            <td class="table-tr-td">JavaScript</td>
+            <td class="table-tr-td">～6ヵ月</td>
+          </tr>
+          <tr class="table-tr">
+            <td class="table-tr-td">JQuery</td>
+            <td class="table-tr-td">～6ヵ月</td>
+          </tr>
+          <tr class="table-tr">
+            <td class="table-tr-td">WordPress</td>
+            <td class="table-tr-td">～6ヵ月</td>
+          </tr>
+        </table>
+        <p class="intro-box-p">・アルバイトでVBScript、PHP、DB言語の実務経験中</p>
+        <p class="intro-box-p">・その他大学の講義を通してPython、C言語、Javaなどの学習経験</p>
+      </div>
+    </section>
+
+
+    <section class="work" id="work">
+      <h2 class="main-title">
+        <span class="main-title-first">W</span><span class="small-letter">ork</span>
+      </h2>
+      <p class="work-p">※模写の表記があるものは模写サイトです。<br>中の写真やテキストは差し替えてあります。</p>
+
+      <div class="carousel-wrap">
+        <div id="prev" class="work-btn"></div>
+        <div id="next" class="work-btn"></div>
+        <ul class="work-carousel flex">
+          <!-- 模写を付けるときはunderとaboveにinをつける -->
+          <li>
+            <a href="">
+              <article class="work-carousel-img">
+                <div class="work-carousel-img-label-under in">
+                  <div class="work-carousel-img-label-above in">
+                    <img src="img/me2.jpg" alt="">
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <article class="work-carousel-img">
+                <div class="work-carousel-img-label-under">
+                  <div class="work-carousel-img-label-above">
+                    <img src="img/me2.jpg" alt="">
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <article class="work-carousel-img">
+                <div class="work-carousel-img-label-under">
+                  <div class="work-carousel-img-label-above">
+                    <img src="img/me2.jpg" alt="">
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <article class="work-carousel-img">
+                <div class="work-carousel-img-label-under">
+                  <div class="work-carousel-img-label-above">
+                    <img src="img/me2.jpg" alt="">
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <article class="work-carousel-img">
+                <div class="work-carousel-img-label-under in">
+                  <div class="work-carousel-img-label-above in">
+                    <img src="img/me2.jpg" alt="">
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <article class="work-carousel-img">
+                <div class="work-carousel-img-label-under">
+                  <div class="work-carousel-img-label-above">
+                    <img src="img/me2.jpg" alt="">
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="job" id="job">
+      <h2 class="main-title"><span class="main-title-first">J</span><span class="small-letter">obs</span>
+      </h2>
+
+      <p class="job-p">受けられる仕事</p>
+
+      <div class="flex job-box">
+        <p class="job-box-part"><i class="fas fa-desktop fa-3x"></i>HTML＆CSS、JavaScript、Jquery、WordPress等を使用したWebサイト製作</p>
+        <p class="job-box-part"><i class="fas fa-hammer fa-3x"></i>既存サイトの修正、改善</p>
+        <p class="job-box-part"><i class="fas fa-paint-brush fa-3x"></i>デザインからコーディングまで<p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="main-title"><span class="main-title-first">C</span><span class="small-letter">ontact</span>
+      </h2>
+
+      <p class="contact-text"><i class="far fa-envelope fa-2x"></i>どんな些細なことでも受け付けております。<br>ご相談、お仕事の依頼等,
+        気軽にご連絡ください。</p>
+      <p class="contact-p">メールでのお問い合わせは
+        <a class="contact-p-email" href="mailto:kyogo.paisen@gmail.com">こちら</a>
+      </p>
+      <p class="contact-attention">※返事はできる限り早くするよう心掛けております。<br>1～2日ほどかかることもございますがご了承くださいませ。</p>
+    </section>
+
+
+    <footer class="footer">
+      <small class="footer-copyright">&copy;kyogo yamanada</small>
+    </footer>
+  </div>
+
+  <!-- jQueryの読み込み（CDN） -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- main.jsの読み込み -->
+  <script src="js/main.js"></script>
+</body>
+</html>
