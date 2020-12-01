@@ -519,7 +519,7 @@ body.hidden #hamburger span {
   .main-box {
     left: 22%;
     width: 75%;
-    height: 228px;
+    height: 33%;
   }
 }
 
@@ -634,16 +634,16 @@ body.hidden #hamburger span {
     position: relative;
   }
   .main-myname-box-en {
-    font-size: 30px;
+    font-size: 27px;
     font-family: "Monotype Corsiva";
     color: #358b81;
-    width: 100%;
+    width: 87%;
     position: absolute;
     top: 0px;
     left: 30px;
   }
   .main-myname-box-ja {
-    font-size: 44px;
+    font-size: 37px;
     font-weight: 1000;
     background: -webkit-linear-gradient(-90deg, #282828, #86fde8);
     -webkit-background-clip: text;
