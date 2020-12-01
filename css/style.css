@@ -847,7 +847,7 @@ body.hidden #hamburger span {
 
 @media screen and (max-width: 764px) {
   .intro-box {
-    width: 90%;
+    width: 86%;
     left: 14%;
   }
   .intro-box .table-tr-th {
