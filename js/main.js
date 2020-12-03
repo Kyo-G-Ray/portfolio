@@ -129,7 +129,7 @@ let mainFirst = $(".main-title-first");
 
 function countUpRed(){
   var upRed = setInterval(function(){
-    red += 8;
+    red += 9;
     mainFirst.css({
       "background":"-webkit-linear-gradient(-90deg, #282828, rgb("+ red +","+ green +","+ blue +"))",
       "-webkit-background-clip": "text",
@@ -145,7 +145,7 @@ function countUpRed(){
 
 function countDownRed(){
   var down = setInterval(function(){
-    red -= 8;
+    red -= 9;
     mainFirst.css({
       "background":"-webkit-linear-gradient(-90deg, #282828, rgb("+ red +","+ green +","+ blue +"))",
       "-webkit-background-clip": "text",
@@ -195,7 +195,7 @@ function countDownGreen(){
 
 function countUpBlue(){
   var upBlue = setInterval(function(){
-    blue += 4;
+    blue += 6;
     mainFirst.css({
       "background":"-webkit-linear-gradient(-90deg, #282828, rgb("+ red +","+ green +","+ blue +"))",
       "-webkit-background-clip": "text",
@@ -211,7 +211,7 @@ function countUpBlue(){
 
 function countDownBlue(){
   var down = setInterval(function(){
-    blue -= 4;
+    blue -= 6;
     mainFirst.css({
       "background":"-webkit-linear-gradient(-90deg, #282828, rgb("+ red +","+ green +","+ blue +"))",
       "-webkit-background-clip": "text",
@@ -453,3 +453,79 @@ function scrollWalk() {
   });
 }
 scrollWalk();
+
+
+let height = 30;
+let offset = 0;
+let lastPosition = 0;
+let ticking = false;
+
+function onScroll(){
+  if(lastPosition > height){
+    if(lastPosition > offset){
+      legLeft.removeClass("up");
+      legRight.removeClass("up");
+    }
+    else{
+      legLeft.addClass("up");
+      legRight.addClass("up");
+    }
+    offset = lastPosition;
+  }
+}
+let up = $(".up");
+window.addEventListener('scroll', function(e) {
+  lastPosition = window.scrollY;
+  if (!ticking) {
+    window.requestAnimationFrame(function() {
+      onScroll(lastPosition);
+      ticking = false;
+      if(per <= 0.16){
+        up.removeClass("out");
+        up.removeClass("in");
+      }
+      if(per > 0.16 && per <= 0.3){
+        up.addClass("out");
+        up.removeClass("in");
+        up.removeClass("out");
+        // legRight.addClass("in");
+      }
+      if(per > 0.3){
+        up.removeClass("out");
+        up.addClass("in");
+        up.addClass("out");
+        up.removeClass("in");
+      }
+      if(per > 0.45){
+        up.addClass("out");
+        up.removeClass("in");
+        up.removeClass("out");
+        up.addClass("in");
+      }
+      if(per > 0.6){
+        up.removeClass("out");
+        up.addClass("in");
+        up.addClass("out");
+        up.removeClass("in");
+      }
+      if(per > 0.75){
+        up.addClass("out");
+        up.removeClass("in");
+        up.removeClass("out");
+        up.addClass("in");
+      }
+      if(per > 0.85){
+        up.removeClass("out");
+        // legLeft.addClass("in");
+        up.addClass("out");
+        up.removeClass("in");
+      }
+      if(per >= 0.95){
+        up.removeClass("in");
+        up.removeClass("out");
+      }
+    });
+    ticking = true;
+  }
+});
+onScroll();

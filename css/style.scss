@@ -63,6 +63,11 @@ body{
   &.in{
     animation: walkingIn 1s ease forwards;
   }
+
+  &.up{
+    transform: rotate(0deg);
+    right: 10%;
+  }
 }
 
 .leg-right{
@@ -81,6 +86,17 @@ body{
   &.in{
     animation: walkingIn 1s ease forwards;
   }
+
+  &.up{
+    transform: rotate(0deg);
+    right: 5%;
+  }
+}
+.up.in{
+  animation: walkingInUp 1s ease forwards;
+}
+.up.out{
+  animation: walkingOutUp 1s ease forwards;
 }
 
 .flex{
@@ -668,7 +684,7 @@ body.hidden #hamburger span{
   & > .main-title{
     font-size: 75px;
     top: -128px;
-    left: -16px;
+    left: -11px;
 
     .small-letter{
       transform: translateY(-18%);

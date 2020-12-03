@@ -41,6 +41,34 @@
   }
 }
 
+@keyframes walkingOutUp {
+  from {
+    transform: rotate(0deg) translateY(0px);
+  }
+  30% {
+    opacity: 0;
+    transform: rotate(0deg) translateY(15px);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(0deg) translateY(0px);
+  }
+}
+
+@keyframes walkingInUp {
+  from {
+    opacity: 0;
+    transform: rotate(0deg) translateY(0px);
+  }
+  50% {
+    opacity: 0;
+    transform: rotate(0deg) translateY(20px);
+  }
+  100% {
+    transform: rotate(0deg) translateY(20px);
+  }
+}
+
 #mock {
   position: absolute;
   top: 0;
@@ -104,6 +132,11 @@ body {
   animation: walkingIn 1s ease forwards;
 }
 
+.leg-left.up {
+  transform: rotate(0deg);
+  right: 10%;
+}
+
 .leg-right {
   width: 15px;
   transform: rotate(180deg);
@@ -120,6 +153,19 @@ body {
 
 .leg-right.in {
   animation: walkingIn 1s ease forwards;
+}
+
+.leg-right.up {
+  transform: rotate(0deg);
+  right: 5%;
+}
+
+.up.in {
+  animation: walkingInUp 1s ease forwards;
+}
+
+.up.out {
+  animation: walkingOutUp 1s ease forwards;
 }
 
 .flex {
@@ -690,7 +736,7 @@ body.hidden #hamburger span {
 .intro > .main-title {
   font-size: 75px;
   top: -128px;
-  left: -16px;
+  left: -11px;
 }
 
 .intro > .main-title .small-letter {
