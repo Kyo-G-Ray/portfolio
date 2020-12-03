@@ -530,7 +530,7 @@ body.hidden #hamburger span {
 }
 
 .main-box-posi-img {
-  transition: 4s linear transform 0.5s;
+  transition: 5s linear transform 0.5s;
   position: absolute;
   top: 0;
   left: 0;
@@ -1736,6 +1736,37 @@ li .work-carousel-img:hover {
 }
 
 .contact-p-email:hover::before {
+  width: 100%;
+}
+
+.contact .twitter-box {
+  display: flex;
+  justify-content: flex-start;
+  width: 200px;
+  margin: 0 auto 25px;
+}
+
+.contact .twitter-box-p {
+  display: table;
+}
+
+.contact .twitter-box-p-a {
+  color: #1a4dcb;
+  position: relative;
+}
+
+.contact .twitter-box-p-a::before {
+  content: "";
+  width: 0%;
+  border-bottom: 1px #1a4dcb solid;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+}
+
+.contact .twitter-box-p-a:hover::before {
   width: 100%;
 }
 

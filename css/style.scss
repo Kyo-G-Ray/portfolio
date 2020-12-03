@@ -461,7 +461,7 @@ body.hidden #hamburger span{
       position: relative;
       
       &-img{
-        transition: 4s linear transform 0.5s;
+        transition: 5s linear transform 0.5s;
         position: absolute;
         top: 0;
         left: 0;
@@ -1813,6 +1813,37 @@ body.hidden #hamburger span{
 
       &:hover::before{
         width: 100%;
+      }
+    }
+  }
+
+  .twitter-box{
+    display: flex;
+    justify-content: flex-start;
+    width: 200px;
+    margin: 0 auto 25px;
+
+    &-p{
+      display: table;
+
+      &-a{
+        color: #1a4dcb;
+        position: relative;
+
+        &::before{
+          content: "";
+          width: 0%;
+          border-bottom: 1px #1a4dcb solid;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transition: all .2s ease;
+          -webkit-transition: all .2s ease;
+        }
+
+        &:hover::before{
+          width: 100%;
+        }
       }
     }
   }

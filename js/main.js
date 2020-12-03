@@ -25,6 +25,7 @@ else{
 // hamburgerメニュー以外クリックで閉じる
 $('.hamburger-action').click(function(){
   body.toggleClass("hidden");
+  hamburger.removeClass("active");
 });
 
 
@@ -229,7 +230,7 @@ countUpBlue();
 
 
 /* =================== */
-/*   	 slideishow      */
+/*   	 slideshow       */
 /* =================== */
 
 let nowPage = 0; // 現在の画像
@@ -237,7 +238,7 @@ let nextPage = 1; // 次の画像
 const slides = $("#slideshow").find("img");
 const slideLength = slides.length;
 const fadeTime = 1500; // 1.5s
-const showTime = 3000; // 3s
+const showTime = 4000; // 3s
 
 slides.hide();
 
@@ -474,7 +475,11 @@ function onScroll(){
   }
 }
 let up = $(".up");
-window.addEventListener('scroll', function(e) {
+window.addEventListener('scroll', function() {
+  let scrollValue = window.pageYOffset + window.screen.height;
+  let bodyBottom = document.body.offsetHeight;
+  let per = scrollValue / bodyBottom;
+
   lastPosition = window.scrollY;
   if (!ticking) {
     window.requestAnimationFrame(function() {
