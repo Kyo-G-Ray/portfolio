@@ -328,7 +328,7 @@ body.hidden {
 .hamburger-action-inner nav {
   height: 75%;
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -341,7 +341,7 @@ body.hidden {
 .hamburger-action-inner nav .header-ul-li {
   font-size: 37px;
   color: #f3f3f3;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   transition: .2s;
 }
 

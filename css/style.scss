@@ -270,7 +270,7 @@ body.hidden {
     & nav{
       height: 75%;
       position: absolute;
-      top: 20%;
+      top: 10%;
       left: 50%;
       transform: translateX(-50%);
 
@@ -281,7 +281,7 @@ body.hidden {
         &-li{
           font-size: 37px;
           color: $bgc;
-          margin-bottom: 70px;
+          margin-bottom: 50px;
           transition: .2s;
         }
         &-li:hover{

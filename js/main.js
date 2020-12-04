@@ -12,7 +12,6 @@ hamburger.click(function () {
 });
 
 // 画面スクロールでhamburgerメニュー出現
-hamburger.addClass("in");
 $(window).scroll(function (){
 if($(window).scrollTop() > $(window).height()){
   hamburger.addClass("in");
