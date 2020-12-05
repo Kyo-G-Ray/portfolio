@@ -455,9 +455,14 @@ body.hidden #hamburger span{
     position: absolute;
     top: 60px;
     right: 20%;
+    // z-indexいれてみる
     
     &-posi{
       width: 100%;
+      overflow: hidden;
+      border-radius: 30px;
+      -moz-border-radius:30px;
+      -webkit-border-radius:30px;
       position: relative;
       
       &-img{
