@@ -358,7 +358,7 @@ body.hidden #hamburger span{
     color: $main_color;
     font-size: 115px;
     font-weight: 200;
-    font-family: "Monotype Corsiva";
+    font-family: "Monotype Corsiva",'Palatino','Merriweather';
     transform: rotate(90deg);
     transform-origin:left bottom;
     position: absolute;
@@ -544,7 +544,7 @@ body.hidden #hamburger span{
 
       &-en{
         font-size: 30px;
-        font-family: "Monotype Corsiva";
+        font-family: "Monotype Corsiva",'Palatino','Merriweather';
         color: $main_color;
         width: 88%;
         position: absolute;
@@ -564,7 +564,7 @@ body.hidden #hamburger span{
         background: $gradient;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-family: Monotype Corsiva, fantasy,"HG行書体", monospace;
+        font-family: Monotype Corsiva, fantasy,"HG行書体", monospace,'游明朝体','Kaiti TC', 'ヒラギノ明朝 ProN';
         position: absolute;
         top: 60px;
         left: 0px;
@@ -741,7 +741,7 @@ body.hidden #hamburger span{
     background: $gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Monotype Corsiva, fantasy,"HG行書体", monospace;
+    font-family: Monotype Corsiva, fantasy,"HG行書体", monospace,'Noto Serif JP','Kaushan Script';
 
     @media screen and (min-width:321px) and (max-width:500px){
       &{

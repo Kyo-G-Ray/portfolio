@@ -389,13 +389,13 @@ let legRight = $(".leg-right");
 let legSize = 65;
 function scrollWalk() {
   window.addEventListener("scroll", function(){
-    let scrollValue = window.pageYOffset + window.screen.height;
+    let scrollValue = window.pageYOffset + window.innerHeight;
     // console.log(scrollValue);
     let bodyBottom = document.body.offsetHeight;
     // console.log(bodyBottom);
 
     let per = scrollValue / bodyBottom;
-    let posi = window.screen.height * per - legSize;
+    let posi = window.innerHeight * per - legSize;
 
     // console.log(posi);
     console.log(per);
