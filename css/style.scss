@@ -535,12 +535,12 @@ body.hidden #hamburger span{
   //   }
   // }
 
-  // @media screen and (max-width:320px){
-  //   &{
-  //     top: 250px;
-  //     left: 20%;
-  //   }
-  // }
+  @media screen and (max-width:320px){
+    &{
+      width: 190px;
+      padding-top: 250px;
+    }
+  }
 
     &-box{
       position: relative;
@@ -622,8 +622,8 @@ body.hidden #hamburger span{
     }
   
     &-myname{
-      position: absolute;
-      top: 350px;
+      width: 230px;
+      padding-top: 300px;
   
       &-box{
         position: relative;

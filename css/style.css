@@ -740,6 +740,13 @@ body.hidden #hamburger span {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 320px) {
+  .main-myname {
+    width: 190px;
+    padding-top: 250px;
+  }
+}
+
 .main-myname-box {
   position: relative;
 }
@@ -811,8 +818,8 @@ body.hidden #hamburger span {
     width: 300px;
   }
   .main-myname {
-    position: absolute;
-    top: 350px;
+    width: 230px;
+    padding-top: 300px;
   }
   .main-myname-box {
     position: relative;
