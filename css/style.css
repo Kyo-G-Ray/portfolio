@@ -733,30 +733,11 @@ body.hidden #hamburger span {
 }
 
 .main-myname {
-  width: 65%;
+  width: 300px;
   height: 122px;
-  position: absolute;
-  top: 500px;
-  right: 0%;
-}
-
-@media screen and (max-width: 962px) {
-  .main-myname {
-    left: 35%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .main-myname {
-    left: 35%;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .main-myname {
-    top: 250px;
-    left: 20%;
-  }
+  display: table;
+  padding-top: 430px;
+  margin: 0 auto;
 }
 
 .main-myname-box {
@@ -764,10 +745,10 @@ body.hidden #hamburger span {
 }
 
 .main-myname-box-en {
+  display: table;
   font-size: 30px;
   font-family: "Monotype Corsiva",'Palatino','Merriweather';
   color: #358b81;
-  width: 88%;
   position: absolute;
   top: 0px;
   left: 30px;
@@ -780,6 +761,7 @@ body.hidden #hamburger span {
 }
 
 .main-myname-box-ja {
+  display: table;
   font-size: 54px;
   font-weight: 1000;
   background: -webkit-linear-gradient(-90deg, #282828, #86fde8);
@@ -1242,6 +1224,11 @@ body.hidden #hamburger span {
 .work-btn:nth-child(2)::before {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
+}
+
+.work-p-box {
+  width: 90%;
+  margin: 0;
 }
 
 .work-p {

@@ -514,39 +514,42 @@ body.hidden #hamburger span{
   }
 
   &-myname{
-    width: 65%;
+    width: 300px;
     height: 122px;
-    position: absolute;
-    top: 500px;
-    right: 0%;
+    display: table;
+    padding-top: 430px;
+    margin: 0 auto;
+    // position: absolute;
+    // top: 500px;
+    // right: 0%;
 
-  @media screen and (max-width:962px){
-    &{
-      left: 35%;
-    }
-  }
+  // @media screen and (max-width:962px){
+  //   &{
+  //     left: 35%;
+  //   }
+  // }
 
-  @media screen and (max-width:500px){
-    &{
-      left: 35%;
-    }
-  }
+  // @media screen and (max-width:500px){
+  //   &{
+  //     left: 35%;
+  //   }
+  // }
 
-  @media screen and (max-width:320px){
-    &{
-      top: 250px;
-      left: 20%;
-    }
-  }
+  // @media screen and (max-width:320px){
+  //   &{
+  //     top: 250px;
+  //     left: 20%;
+  //   }
+  // }
 
     &-box{
       position: relative;
 
       &-en{
+        display: table;
         font-size: 30px;
         font-family: "Monotype Corsiva",'Palatino','Merriweather';
         color: $main_color;
-        width: 88%;
         position: absolute;
         top: 0px;
         left: 30px;
@@ -559,6 +562,7 @@ body.hidden #hamburger span{
       }
 
       &-ja{
+        display: table;
         font-size: 54px;
         font-weight: 1000;
         background: $gradient;
@@ -1083,6 +1087,11 @@ body.hidden #hamburger span{
         transform: rotate(135deg);
       }
     }
+  }
+
+  &-p-box{
+    width: 90%;
+    margin: 0;
   }
 
   &-p{
