@@ -552,7 +552,7 @@ body.hidden #hamburger span {
   color: #358b81;
   font-size: 115px;
   font-weight: 200;
-  font-family: "Monotype Corsiva",'Palatino','Merriweather';
+  font-family: "Monotype Corsiva",'Palatino','Bodoni Moda','Merriweather';
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   -webkit-transform-origin: left bottom;
@@ -754,7 +754,7 @@ body.hidden #hamburger span {
 .main-myname-box-en {
   display: table;
   font-size: 30px;
-  font-family: "Monotype Corsiva",'Palatino','Merriweather';
+  font-family: "Monotype Corsiva",'Bodoni Moda','Palatino','Merriweather';
   color: #358b81;
   position: absolute;
   top: 0px;
@@ -940,7 +940,7 @@ body.hidden #hamburger span {
   background: -webkit-linear-gradient(-90deg, #282828, #86fde8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: Monotype Corsiva, fantasy,"HG行書体", monospace,'Noto Serif JP','Kaushan Script';
+  font-family: Monotype Corsiva,'Bodoni Moda', fantasy,"HG行書体", monospace,'Noto Serif JP','Kaushan Script';
 }
 
 @media screen and (min-width: 321px) and (max-width: 500px) {
