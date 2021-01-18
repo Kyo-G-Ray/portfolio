@@ -828,7 +828,8 @@ body.hidden #hamburger span {
     font-size: 27px;
     font-family: "Monotype Corsiva";
     color: #358b81;
-    width: 93%;
+    white-space: nowrap;
+    width: 88%;
     position: absolute;
     top: 0px;
     left: 30px;
