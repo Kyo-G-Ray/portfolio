@@ -756,6 +756,7 @@ body.hidden #hamburger span {
   font-size: 30px;
   font-family: "Monotype Corsiva",'Bodoni Moda','Palatino','Merriweather';
   color: #358b81;
+  white-space: nowrap;
   position: absolute;
   top: 0px;
   left: 30px;
@@ -828,7 +829,6 @@ body.hidden #hamburger span {
     font-size: 27px;
     font-family: "Monotype Corsiva";
     color: #358b81;
-    white-space: nowrap;
     width: 88%;
     position: absolute;
     top: 0px;
