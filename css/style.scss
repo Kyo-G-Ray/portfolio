@@ -479,6 +479,12 @@ body.hidden #hamburger span{
     }
 
 
+    @media screen and (min-width:963px){
+      left: 50%;
+      transform: translateX(-50%);
+      width: 460px;
+      height: 341px;
+    }
 
     @media screen and (max-width:962px){
       &{
@@ -634,7 +640,9 @@ body.hidden #hamburger span{
           font-size: 27px;
           font-family: "Monotype Corsiva";
           color: $main_color;
-          width: 87%;
+          // width: 87%;
+          display: table;
+          white-space: nowrap;
           position: absolute;
           top: 0px;
           left: 10px;
