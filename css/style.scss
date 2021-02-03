@@ -465,6 +465,7 @@ body.hidden #hamburger span{
       -moz-border-radius:30px;
       -webkit-border-radius:30px;
       position: relative;
+      z-index: 5;
       
       &-img{
         transition: 5s linear transform 0.5s;
@@ -788,8 +789,11 @@ body.hidden #hamburger span{
       display: inline-block;
       font-size: 20px;
       text-align: left;
-      text-decoration: underline rgba(255, 173, 144, .8) 2px;
+      // text-decoration: underline rgba(255, 173, 144, .8) 2px;
       -webkit-text-decoration: underline rgba(255, 173, 144, .8) 2px;
+      text-decoration: underline;
+      text-decoration-color:rgba(255, 173, 144, .8);
+      text-decoration-thickness: 2px;
       margin-bottom: 10px;
       position: relative;
       z-index: 3;

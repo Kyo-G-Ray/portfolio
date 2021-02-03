@@ -685,6 +685,7 @@ body.hidden #hamburger span {
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
   position: relative;
+  z-index: 5;
 }
 
 .main-box-posi-img {
@@ -986,8 +987,11 @@ body.hidden #hamburger span {
   display: inline-block;
   font-size: 20px;
   text-align: left;
-  text-decoration: underline rgba(255, 173, 144, 0.8) 2px;
   -webkit-text-decoration: underline rgba(255, 173, 144, 0.8) 2px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(255, 173, 144, 0.8);
+          text-decoration-color: rgba(255, 173, 144, 0.8);
+  text-decoration-thickness: 2px;
   margin-bottom: 10px;
   position: relative;
   z-index: 3;
