@@ -675,6 +675,7 @@ body.hidden #hamburger span {
   position: absolute;
   top: 60px;
   right: 20%;
+  z-index: 10;
 }
 
 .main-box-posi {
