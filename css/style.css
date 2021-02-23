@@ -1384,8 +1384,8 @@ li .work-carousel-img.brilliant {
 }
 
 li .work-carousel-img.brilliant:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  -webkit-transform: scale(1.33);
+          transform: scale(1.33);
 }
 
 li .work-carousel-img:hover {
