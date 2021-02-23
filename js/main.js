@@ -139,7 +139,6 @@ function countUpRed(){
       clearInterval(upRed);
       countDownRed();
     }
-    // console.log(red);
   }, 1000);
 }
 
@@ -155,7 +154,6 @@ function countDownRed(){
       clearInterval(down);
       countUpRed();
     }
-    // console.log(red);
   }, 1000);
 }
 countUpRed();
@@ -172,7 +170,6 @@ function countUpGreen(){
       clearInterval(upGreen);
       countDownGreen();
     }
-    // console.log(green);
   }, 1000);
 }
 
@@ -188,7 +185,6 @@ function countDownGreen(){
       clearInterval(down);
       countUpGreen();
     }
-    // console.log(green);
   }, 1000);
 }
 // countUpGreen();
@@ -205,7 +201,6 @@ function countUpBlue(){
       clearInterval(upBlue);
       countDownBlue();
     }
-    // console.log(blue);
   }, 1000);
 }
 
@@ -221,7 +216,6 @@ function countDownBlue(){
       clearInterval(down);
       countUpBlue();
     }
-    // console.log(blue);
   }, 1000);
 }
 countUpBlue();
@@ -403,15 +397,13 @@ let legSize = 65;
 function scrollWalk() {
   window.addEventListener("scroll", function(){
     let scrollValue = window.pageYOffset + window.innerHeight;
-    // console.log(scrollValue);
+    
     let bodyBottom = document.body.offsetHeight;
-    // console.log(bodyBottom);
+    
 
     let per = scrollValue / bodyBottom;
     let posi = window.innerHeight * per - legSize;
 
-    // console.log(posi);
-    console.log(per);
 
     legLeft.css({
       "top": posi + "px",
