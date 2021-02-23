@@ -329,21 +329,32 @@ body {
   margin-bottom: 50px;
 }
 
+.header-ul-li-a {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header-ul-li-a:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #358b81;
+}
+
 .header #hamburger.in {
   display: block;
   width: 40px;
   height: 40px;
   position: fixed;
   top: 15px;
-  right: 0%;
+  right: 2%;
   cursor: pointer;
   z-index: 999;
 }
 
 .header #hamburger span {
   display: block;
-  width: 20px;
-  height: 1px;
+  width: 30px;
+  height: 2px;
   background: #333;
   position: absolute;
   left: 10px;
@@ -360,11 +371,11 @@ body {
 }
 
 .header #hamburger span:nth-child(2) {
-  top: 20px;
+  top: 22px;
 }
 
 .header #hamburger span:nth-child(3) {
-  top: 30px;
+  top: 34px;
 }
 
 .header #hamburger.active span:nth-child(1) {
@@ -436,7 +447,7 @@ body {
   }
 }
 
-body.hidden {
+html.hidden {
   overflow: hidden;
 }
 
@@ -458,25 +469,28 @@ body.hidden {
 }
 
 .hamburger-action-inner nav {
-  height: 75%;
+  display: table;
   position: absolute;
-  top: 10%;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .hamburger-action-inner nav .header-ul {
-  display: table;
   margin: auto;
 }
 
 .hamburger-action-inner nav .header-ul-li {
   font-size: 37px;
   color: #f3f3f3;
-  margin-bottom: 50px;
+  margin-bottom: 30%;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+.hamburger-action-inner nav .header-ul-li:nth-child(5) {
+  margin-bottom: 0;
 }
 
 .hamburger-action-inner nav .header-ul-li:hover {
@@ -486,7 +500,11 @@ body.hidden {
           transform: scale(1.07);
 }
 
-body.hidden .hamburger-action {
+.hamburger-action-inner nav .header-ul-li-a:hover {
+  color: #a9deeb;
+}
+
+html.hidden .hamburger-action {
   width: 100%;
   height: 100vh;
   background-color: rgba(70, 70, 70, 0.8);
@@ -498,7 +516,7 @@ body.hidden .hamburger-action {
   z-index: 99;
 }
 
-body.hidden #hamburger span {
+html.hidden #hamburger span {
   background-color: #fff;
 }
 

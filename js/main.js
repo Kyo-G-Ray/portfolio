@@ -3,12 +3,12 @@
 /* =================== */
 /*   	  hamburger      */
 /* =================== */
-let body = $("body");
+let html = $("html");
 let hamburger = $("#hamburger");
 hamburger.click(function () {
   $(".header-nav").fadeToggle(600);
   hamburger.toggleClass("active");
-  body.toggleClass("hidden");
+  html.toggleClass("hidden");
 });
 
 // 画面スクロールでhamburgerメニュー出現
@@ -23,7 +23,7 @@ else{
 
 // hamburgerメニュー以外クリックで閉じる
 $('.hamburger-action').click(function(){
-  body.toggleClass("hidden");
+  html.toggleClass("hidden");
   hamburger.removeClass("active");
 });
 
