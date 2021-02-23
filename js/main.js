@@ -237,7 +237,7 @@ let nextPage = 1; // 次の画像
 const slides = $("#slideshow").find("img");
 const slideLength = slides.length;
 const fadeTime = 1500; // 1.5s
-const showTime = 4000; // 3s
+const showTime = 6000;
 
 slides.hide();
 
@@ -254,7 +254,7 @@ const slideshow = () => {
   nextPage++;
 }
 
-// 3秒ごとにslideshow関数の呼び出し
+// slideshow関数の呼び出し
 setInterval(slideshow, showTime);
 
 
@@ -290,29 +290,35 @@ $(window).scroll(function(){
 /*    carousel panel   */ 
 /* =================== */
 
-const carousel = $(".work-carousel");
-const carouselItem = carousel.find("li");
-const prev = $("#prev");
-const next = $("#next");
+let carousel = $(".work-carousel");
+let carouselItem = carousel.find("li");
+let prev = $("#prev");
+let next = $("#next");
 
-const length = carouselItem.length;
-const carouselWidth = carouselItem.width();
-const innerWidth = carouselWidth * length;
+let length = carouselItem.length;
+let carouselWidth = carouselItem.width();
+let innerWidth = carouselWidth * length;
 const time = 400;
 
 let c = 1;
 
 let flag = true;
 
+// 画像サイズ切り替え
 let workCal = $(".work-carousel");
 let brilliant = workCal.find(".work-carousel-img");
 brilliant.eq(0).addClass("brilliant");
+
+// 説明の切り替え
+let workDes = $(".work-des");
+let workDesBox = workDes.find(".work-des-box");
 
 prev.click(function () {
   if(flag){
     flag = false;
     if (c == 1) {
       brilliant.eq(c - 1).removeClass("brilliant");
+      workDesBox.eq(c - 1).addClass("out");
       carousel.stop().animate(
         {
           // left: (-length + 1) * carouselWidth,
@@ -322,12 +328,14 @@ prev.click(function () {
         function(){
           flag = true;
         }
-      );
+        );
       c = length;
       brilliant.eq(c - 1).addClass("brilliant");
+      workDesBox.eq(c - 1).removeClass("out");
     } 
     else {
       brilliant.eq(c - 1).removeClass("brilliant");
+      workDesBox.eq(c - 1).addClass("out");
       carousel.stop().animate(
         {
           left: (-c + 2) * carouselWidth,
@@ -339,6 +347,7 @@ prev.click(function () {
       );
       c--;
       brilliant.eq(c - 1).addClass("brilliant");
+      workDesBox.eq(c - 1).removeClass("out");
     }
   }
 });
@@ -349,6 +358,7 @@ next.click(function () {
     flag = false;
     if (c == length) {
       brilliant.eq(length - 1).removeClass("brilliant");
+      workDesBox.eq(c - 1).addClass("out");
       carousel.stop().animate(
         {
           left: 0,
@@ -360,9 +370,11 @@ next.click(function () {
       );
       c = 1;
       brilliant.eq(c - 1).addClass("brilliant");
+      workDesBox.eq(c - 1).removeClass("out");
     } 
     else {
       brilliant.eq(c - 1).removeClass("brilliant");
+      workDesBox.eq(c - 1).addClass("out");
       carousel.stop().animate(
         {
           left: -c * carouselWidth,
@@ -374,6 +386,7 @@ next.click(function () {
       );
       c++;
       brilliant.eq(c - 1).addClass("brilliant");
+      workDesBox.eq(c - 1).removeClass("out");
     }
   }
 });

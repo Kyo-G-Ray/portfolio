@@ -187,7 +187,12 @@
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 100%;
 }
 
@@ -196,14 +201,15 @@ a {
   text-decoration: none;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
 html {
   background: #fafafa;
   color: #333;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   overflow-x: hidden;
 }
 
@@ -219,8 +225,8 @@ body {
   width: 15px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   position: fixed;
   top: 25px;
   right: 5%;
@@ -247,8 +253,8 @@ body {
   width: 15px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   position: fixed;
   top: 25px;
   right: 10%;
@@ -388,14 +394,14 @@ body {
     height: 40px;
     position: fixed;
     top: 15px;
-    right: 0%;
+    right: 5%;
     cursor: pointer;
     z-index: 999;
   }
   .header #hamburger span {
     display: block;
-    width: 20px;
-    height: 1px;
+    width: 40px;
+    height: 2px;
     background: #333;
     position: absolute;
     left: 10px;
@@ -406,13 +412,13 @@ body {
     left: 15px;
   }
   .header #hamburger span:nth-child(1) {
-    top: 10px;
+    top: 13px;
   }
   .header #hamburger span:nth-child(2) {
-    top: 20px;
+    top: 26px;
   }
   .header #hamburger span:nth-child(3) {
-    top: 30px;
+    top: 39px;
   }
   .header #hamburger.active span:nth-child(1) {
     top: 20px;
@@ -438,8 +444,8 @@ body.hidden {
   width: 100%;
   height: 100vh;
   background-color: rgba(70, 70, 70, 0.8);
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   position: fixed;
   top: 0;
   z-index: 100;
@@ -469,8 +475,8 @@ body.hidden {
   font-size: 37px;
   color: #f3f3f3;
   margin-bottom: 50px;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .hamburger-action-inner nav .header-ul-li:hover {
@@ -487,8 +493,8 @@ body.hidden .hamburger-action {
   position: fixed;
   top: 0;
   left: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   z-index: 99;
 }
 
@@ -552,7 +558,7 @@ body.hidden #hamburger span {
   color: #358b81;
   font-size: 115px;
   font-weight: 200;
-  font-family: "Monotype Corsiva",'Palatino','Merriweather';
+  font-family: "Monotype Corsiva", "Palatino", "Merriweather";
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   -webkit-transform-origin: left bottom;
@@ -574,38 +580,38 @@ body.hidden #hamburger span {
 }
 
 .main-title .letter-wave:nth-child(2).wave {
-  -webkit-animation: shake 1s ease .1s;
-          animation: shake 1s ease .1s;
+  -webkit-animation: shake 1s ease 0.1s;
+          animation: shake 1s ease 0.1s;
 }
 
 .main-title .letter-wave:nth-child(3).wave {
-  -webkit-animation: shake 1s ease .2s;
-          animation: shake 1s ease .2s;
+  -webkit-animation: shake 1s ease 0.2s;
+          animation: shake 1s ease 0.2s;
 }
 
 .main-title .letter-wave:nth-child(4).wave {
-  -webkit-animation: shake 1s ease .3s;
-          animation: shake 1s ease .3s;
+  -webkit-animation: shake 1s ease 0.3s;
+          animation: shake 1s ease 0.3s;
 }
 
 .main-title .letter-wave:nth-child(5).wave {
-  -webkit-animation: shake 1s ease .4s;
-          animation: shake 1s ease .4s;
+  -webkit-animation: shake 1s ease 0.4s;
+          animation: shake 1s ease 0.4s;
 }
 
 .main-title .letter-wave:nth-child(6).wave {
-  -webkit-animation: shake 1s ease .5s;
-          animation: shake 1s ease .5s;
+  -webkit-animation: shake 1s ease 0.5s;
+          animation: shake 1s ease 0.5s;
 }
 
 .main-title .letter-wave:nth-child(7).wave {
-  -webkit-animation: shake 1s ease .6s;
-          animation: shake 1s ease .6s;
+  -webkit-animation: shake 1s ease 0.6s;
+          animation: shake 1s ease 0.6s;
 }
 
 .main-title .letter-wave:nth-child(8).wave {
-  -webkit-animation: shake 1s ease .7s;
-          animation: shake 1s ease .7s;
+  -webkit-animation: shake 1s ease 0.7s;
+          animation: shake 1s ease 0.7s;
 }
 
 .main-title .small-letter {
@@ -641,7 +647,7 @@ body.hidden #hamburger span {
 }
 
 .main-title-first {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 180px;
   font-weight: 1000;
   background: -webkit-linear-gradient(-90deg, #282828, #86fde8);
@@ -732,7 +738,15 @@ body.hidden #hamburger span {
   .main-box {
     left: 22%;
     width: 75%;
-    height: 33%;
+    height: 42%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .main-box {
+    left: 23%;
+    width: 70%;
+    height: 30%;
   }
 }
 
@@ -766,7 +780,7 @@ body.hidden #hamburger span {
 .main-myname-box-en {
   display: table;
   font-size: 30px;
-  font-family: "Monotype Corsiva",'Palatino','Merriweather';
+  font-family: "Monotype Corsiva", "Palatino", "Merriweather";
   color: #358b81;
   position: absolute;
   top: 0px;
@@ -787,7 +801,7 @@ body.hidden #hamburger span {
   background: -webkit-linear-gradient(-90deg, #282828, #86fde8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: Monotype Corsiva, fantasy,"HG行書体", monospace,'游明朝体','Kaiti TC', 'ヒラギノ明朝 ProN';
+  font-family: Monotype Corsiva, fantasy, "HG行書体", monospace, "游明朝体", "Kaiti TC", "ヒラギノ明朝 ProN";
   position: absolute;
   top: 60px;
   left: 0px;
@@ -856,7 +870,7 @@ body.hidden #hamburger span {
     background: -webkit-linear-gradient(-90deg, #282828, #86fde8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Monotype Corsiva, fantasy,"HG行書体", monospace;
+    font-family: Monotype Corsiva, fantasy, "HG行書体", monospace;
     position: absolute;
     top: 60px;
     left: 0px;
@@ -957,7 +971,7 @@ body.hidden #hamburger span {
   background: -webkit-linear-gradient(-90deg, #282828, #86fde8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: Monotype Corsiva, fantasy,"HG行書体", monospace,'Noto Serif JP','Kaushan Script';
+  font-family: Monotype Corsiva, fantasy, "HG行書体", monospace, "Noto Serif JP", "Kaushan Script";
 }
 
 @media screen and (min-width: 321px) and (max-width: 500px) {
@@ -1062,8 +1076,8 @@ body.hidden #hamburger span {
 
 @media screen and (max-width: 764px) {
   .intro-box {
-    width: 86%;
-    left: 14%;
+    width: 76%;
+    left: 19%;
   }
   .intro-box .table-tr-th {
     width: 140px;
@@ -1084,8 +1098,8 @@ body.hidden #hamburger span {
 
 @media screen and (min-width: 321px) and (max-width: 422px) {
   .intro-box {
-    width: 80%;
-    left: 20%;
+    width: 75%;
+    left: 19%;
   }
   .intro-box .table {
     border-spacing: 20px 10px;
@@ -1170,7 +1184,7 @@ body.hidden #hamburger span {
 }
 
 .work {
-  height: 550px;
+  height: 750px;
   position: relative;
   padding-top: 170px;
   overflow: hidden;
@@ -1206,7 +1220,7 @@ body.hidden #hamburger span {
   background-color: #fff;
   border-radius: 50%;
   position: absolute;
-  top: 360px;
+  top: 400px;
   left: 37%;
   z-index: 90;
   -webkit-transition: 0.3s;
@@ -1262,7 +1276,7 @@ body.hidden #hamburger span {
 
 .work-p {
   display: table;
-  font-size: 13px;
+  font-size: 19px;
   margin: 0 0 20px auto;
 }
 
@@ -1272,10 +1286,10 @@ body.hidden #hamburger span {
 
 .work-carousel {
   position: absolute;
-  top: 50px;
+  top: 70px;
   left: 0;
-  width: 950px;
-  margin: 0 0 100px 100px;
+  width: 1950px;
+  margin: 0 0 100px 10%;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
@@ -1283,14 +1297,14 @@ body.hidden #hamburger span {
 }
 
 li .work-carousel-img {
-  width: 200px;
+  width: 500px;
   background-color: transparent;
   border-radius: 10px;
   -webkit-box-shadow: #888 0 8px 20px;
           box-shadow: #888 0 8px 20px;
-  -webkit-transition: .3s;
-  transition: .3s;
-  margin-right: 65px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-right: 120px;
   position: relative;
 }
 
@@ -1308,8 +1322,8 @@ li .work-carousel-img-label-under.in::before {
   -webkit-transform: rotate(-60deg);
           transform: rotate(-60deg);
   position: absolute;
-  top: 4.5%;
-  right: 23.5%;
+  top: 18.5%;
+  right: 24.5%;
 }
 
 li .work-carousel-img-label-under.in::after {
@@ -1319,11 +1333,11 @@ li .work-carousel-img-label-under.in::after {
   background-color: #FAFAD2;
   -webkit-filter: brightness(0.7);
           filter: brightness(0.7);
-  -webkit-transform: rotate(43deg);
-          transform: rotate(43deg);
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
   position: absolute;
-  top: 9%;
-  right: 1.8%;
+  top: 23%;
+  right: -2.6%;
 }
 
 li .work-carousel-img-label-above.in {
@@ -1332,29 +1346,29 @@ li .work-carousel-img-label-above.in {
 
 li .work-carousel-img-label-above.in::before {
   content: "";
-  width: 30%;
-  border-bottom: 20px solid #FAFAD2;
+  width: 38%;
+  border-bottom: 30px solid #FAFAD2;
   border-left: 34px solid transparent;
   border-right: 12px solid transparent;
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
   position: absolute;
-  top: 1%;
-  right: -10%;
+  top: 6%;
+  right: -8%;
   z-index: 15;
 }
 
 li .work-carousel-img-label-above.in::after {
-  content: "模写";
-  width: 55%;
+  content: "FaiThLinK";
+  width: 47%;
   color: #358b81;
   font-weight: 600;
   text-align: center;
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
   position: absolute;
-  top: 1.7%;
-  right: -13%;
+  top: 8%;
+  right: -10%;
   z-index: 15;
 }
 
@@ -1365,8 +1379,8 @@ li .work-carousel-img img {
 }
 
 li .work-carousel-img.brilliant {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 li .work-carousel-img.brilliant:hover {
@@ -1379,11 +1393,252 @@ li .work-carousel-img:hover {
           transform: scale(1.08);
 }
 
+.work-des {
+  width: 700px;
+  position: absolute;
+  top: 470px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.work-des-box {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.work-des-box.out {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 0;
+}
+
+.work-des-p {
+  font-size: 22px;
+}
+
+.work-posi {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.work-ttl {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .work {
+    height: 550px;
+    padding-top: 170px;
+    overflow: hidden;
+  }
+  .work .main-title {
+    -webkit-transform: rotate(0deg) !important;
+            transform: rotate(0deg) !important;
+    position: absolute;
+    top: 0px;
+    left: 6%;
+    z-index: 5;
+  }
+  .work .main-title .small-letter {
+    -webkit-transform: translateY(-2%);
+            transform: translateY(-2%);
+  }
+  .work .main-title-first {
+    font-size: 130px;
+  }
+  .work-btn {
+    border: 1px solid #555;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    top: 360px;
+    left: 37%;
+    z-index: 90;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .work-btn:hover {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  .work-btn:nth-child(2):hover {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  .work-btn:hover::before {
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+  }
+  .work-btn::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-top: 1px solid #555;
+    border-left: 1px solid #555;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .work-btn:nth-child(2) {
+    left: unset;
+    right: 37%;
+  }
+  .work-btn:nth-child(2)::before {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  .work-p-box {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .work-p {
+    display: table;
+    font-size: 16px;
+    margin: 0 0 20px auto;
+  }
+  .work .carousel-wrap {
+    position: relative;
+  }
+  .work-carousel {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 950px;
+    margin: 0 0 100px 100px;
+  }
+  li .work-carousel-img {
+    width: 300px;
+    border-radius: 10px;
+    -webkit-box-shadow: #888 0 8px 20px;
+            box-shadow: #888 0 8px 20px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin-right: 65px;
+    position: relative;
+  }
+  li .work-carousel-img-label-under.in {
+    position: relative;
+  }
+  li .work-carousel-img-label-under.in::before {
+    content: "";
+    width: 35%;
+    height: 19%;
+    -webkit-filter: brightness(0.7);
+            filter: brightness(0.7);
+    -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+    position: absolute;
+    top: 14.5%;
+    right: 19.5%;
+  }
+  li .work-carousel-img-label-under.in::after {
+    content: "";
+    width: 25%;
+    height: 19%;
+    -webkit-filter: brightness(0.7);
+            filter: brightness(0.7);
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+    position: absolute;
+    top: 17%;
+    right: -4.8%;
+  }
+  li .work-carousel-img-label-above.in {
+    position: relative;
+  }
+  li .work-carousel-img-label-above.in::before {
+    content: "";
+    width: 30%;
+    border-bottom: 20px solid #FAFAD2;
+    border-left: 34px solid transparent;
+    border-right: 12px solid transparent;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+    position: absolute;
+    top: 1%;
+    right: -10%;
+    z-index: 15;
+  }
+  li .work-carousel-img-label-above.in::after {
+    content: "FaiThLinK";
+    width: 47%;
+    color: #358b81;
+    font-weight: 600;
+    text-align: center;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+    position: absolute;
+    top: 1.7%;
+    right: -13%;
+    z-index: 15;
+  }
+  li .work-carousel-img img {
+    border-radius: 10px;
+    position: relative;
+    z-index: 10;
+  }
+  li .work-carousel-img.brilliant {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  li .work-carousel-img.brilliant:hover {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  li .work-carousel-img:hover {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+  }
+  .work-des {
+    width: 450px;
+    position: absolute;
+    top: 270px;
+  }
+  .work-des-box {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .work-des-box.out {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    opacity: 0;
+  }
+  .work-des-p {
+    font-size: 18px;
+  }
+  .work-posi {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .work-ttl {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (min-width: 321px) and (max-width: 500px) {
   .work {
-    height: 400px;
+    height: 500px;
     position: relative;
-    padding-top: 200px;
+    padding-top: 160px;
   }
   .work .main-title {
     font-size: 60px;
@@ -1395,7 +1650,7 @@ li .work-carousel-img:hover {
     width: 45px;
     height: 45px;
     background-color: #fafafa;
-    top: 180px;
+    top: 220px;
     left: 20px;
     z-index: 90;
   }
@@ -1439,21 +1694,20 @@ li .work-carousel-img:hover {
     top: 50px;
     left: 0;
     width: 950px;
-    margin: 0 0 100px 100px;
+    margin: 0 0 0 70px;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
   li .work-carousel-img {
-    width: 135px;
+    width: 220px;
     background-color: transparent;
     border-radius: 10px;
     -webkit-box-shadow: #888 0 8px 20px;
             box-shadow: #888 0 8px 20px;
-    -webkit-transition: .3s;
-    transition: .3s;
-    margin-right: 65px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
     position: relative;
   }
   li .work-carousel-img-label-under.in {
@@ -1469,7 +1723,7 @@ li .work-carousel-img:hover {
     -webkit-transform: rotate(-60deg);
             transform: rotate(-60deg);
     position: absolute;
-    top: 4.5%;
+    top: 16.5%;
     right: 29.5%;
   }
   li .work-carousel-img-label-under.in::after {
@@ -1479,39 +1733,39 @@ li .work-carousel-img:hover {
     background-color: #FAFAD2;
     -webkit-filter: brightness(0.7);
             filter: brightness(0.7);
-    -webkit-transform: rotate(43deg);
-            transform: rotate(43deg);
+    -webkit-transform: rotate(31deg);
+            transform: rotate(31deg);
     position: absolute;
-    top: 12%;
-    right: 1.8%;
+    top: 25%;
+    right: -4%;
   }
   li .work-carousel-img-label-above.in {
     position: relative;
   }
   li .work-carousel-img-label-above.in::before {
     content: "";
-    width: 31%;
-    border-bottom: 18px solid #FAFAD2;
-    border-left: 31px solid transparent;
+    width: 37%;
+    border-bottom: 25px solid #fafad2;
+    border-left: 30px solid transparent;
     border-right: 10px solid transparent;
     -webkit-transform: rotate(30deg);
             transform: rotate(30deg);
     position: absolute;
-    top: 0%;
+    top: -2%;
     right: -11%;
     z-index: 15;
   }
   li .work-carousel-img-label-above.in::after {
-    content: "模写";
-    width: 53%;
+    content: "FaiThLinK";
+    width: 47%;
     color: #358b81;
     font-weight: 600;
     text-align: center;
     -webkit-transform: rotate(30deg);
             transform: rotate(30deg);
     position: absolute;
-    top: 1.7%;
-    right: -13%;
+    top: 4%;
+    right: -9%;
     z-index: 15;
   }
   li .work-carousel-img img {
@@ -1531,13 +1785,43 @@ li .work-carousel-img:hover {
     -webkit-transform: scale(1.08);
             transform: scale(1.08);
   }
+  .work-des {
+    width: 60%;
+    position: absolute;
+    top: 230px;
+  }
+  .work-des-box {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .work-des-box.out {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  .work-des-p {
+    font-size: 17px;
+  }
+  .work-posi {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .work-ttl {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 320px) {
   .work {
-    height: 420px;
+    height: 520px;
     position: relative;
-    padding-top: 100px;
+    padding-top: 130px;
   }
   .work .main-title {
     font-size: 60px;
@@ -1579,11 +1863,11 @@ li .work-carousel-img:hover {
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
-  .work-btn:nth-child(3) {
+  .work-btn:nth-child(2) {
     left: unset;
     right: 15px;
   }
-  .work-btn:nth-child(3)::before {
+  .work-btn:nth-child(2)::before {
     -webkit-transform: rotate(135deg);
             transform: rotate(135deg);
   }
@@ -1592,21 +1876,20 @@ li .work-carousel-img:hover {
     top: 50px;
     left: 0;
     width: 950px;
-    margin: 0 0 100px 100px;
+    margin: 0 0 0 60px;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
   li .work-carousel-img {
-    width: 135px;
+    width: 190px;
     background-color: transparent;
     border-radius: 10px;
     -webkit-box-shadow: #888 0 8px 20px;
             box-shadow: #888 0 8px 20px;
-    -webkit-transition: .3s;
-    transition: .3s;
-    margin-right: 65px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
     position: relative;
   }
   li .work-carousel-img-label-under.in {
@@ -1622,8 +1905,8 @@ li .work-carousel-img:hover {
     -webkit-transform: rotate(-60deg);
             transform: rotate(-60deg);
     position: absolute;
-    top: 4.5%;
-    right: 29.5%;
+    top: 13%;
+    right: 36%;
   }
   li .work-carousel-img-label-under.in::after {
     content: "";
@@ -1632,39 +1915,39 @@ li .work-carousel-img:hover {
     background-color: #FAFAD2;
     -webkit-filter: brightness(0.7);
             filter: brightness(0.7);
-    -webkit-transform: rotate(43deg);
-            transform: rotate(43deg);
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
     position: absolute;
-    top: 12%;
-    right: 1.8%;
+    top: 35%;
+    right: -4%;
   }
   li .work-carousel-img-label-above.in {
     position: relative;
   }
   li .work-carousel-img-label-above.in::before {
     content: "";
-    width: 31%;
-    border-bottom: 18px solid #FAFAD2;
+    width: 43%;
+    border-bottom: 25px solid #fafad2;
     border-left: 31px solid transparent;
     border-right: 10px solid transparent;
     -webkit-transform: rotate(30deg);
             transform: rotate(30deg);
     position: absolute;
-    top: 0%;
-    right: -11%;
+    top: -3%;
+    right: -13%;
     z-index: 15;
   }
   li .work-carousel-img-label-above.in::after {
-    content: "模写";
-    width: 53%;
+    content: "FaiThLinK";
+    width: 47%;
     color: #358b81;
     font-weight: 600;
     text-align: center;
     -webkit-transform: rotate(30deg);
             transform: rotate(30deg);
     position: absolute;
-    top: 1.7%;
-    right: -13%;
+    top: 2%;
+    right: -7%;
     z-index: 15;
   }
   li .work-carousel-img img {
@@ -1683,6 +1966,36 @@ li .work-carousel-img:hover {
   li .work-carousel-img:hover {
     -webkit-transform: scale(1.08);
             transform: scale(1.08);
+  }
+  .work-des {
+    width: 80%;
+    position: absolute;
+    top: 230px;
+  }
+  .work-des-box {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .work-des-box.out {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  .work-des-p {
+    font-size: 17px;
+  }
+  .work-posi {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .work-ttl {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
   }
 }
 
@@ -1747,8 +2060,8 @@ li .work-carousel-img:hover {
   opacity: 0;
   -webkit-transform: translateY(25px);
           transform: translateY(25px);
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   padding: 25px 11px;
 }
 
@@ -2013,8 +2326,8 @@ li .work-carousel-img:hover {
   position: absolute;
   bottom: 0;
   left: 0;
-  transition: all .2s ease;
-  -webkit-transition: all .2s ease;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
 }
 
 .contact-p-email:hover::before {
@@ -2050,8 +2363,8 @@ li .work-carousel-img:hover {
   position: absolute;
   bottom: 0;
   left: 0;
-  transition: all .2s ease;
-  -webkit-transition: all .2s ease;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
 }
 
 .contact .twitter-box-p-a:hover::before {
@@ -2093,8 +2406,8 @@ li .work-carousel-img:hover {
     position: absolute;
     bottom: 0;
     left: 0;
-    transition: all .2s ease;
-    -webkit-transition: all .2s ease;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
   }
   .contact-p-email:hover::before {
     width: 100%;
@@ -2134,8 +2447,8 @@ li .work-carousel-img:hover {
     position: absolute;
     bottom: 0;
     left: 0;
-    transition: all .2s ease;
-    -webkit-transition: all .2s ease;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
   }
   .contact-p-email:hover::before {
     width: 100%;
