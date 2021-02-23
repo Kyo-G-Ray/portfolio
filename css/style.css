@@ -1733,11 +1733,11 @@ li .work-carousel-img:hover {
     background-color: #FAFAD2;
     -webkit-filter: brightness(0.7);
             filter: brightness(0.7);
-    -webkit-transform: rotate(31deg);
-            transform: rotate(31deg);
+    -webkit-transform: rotate(34deg);
+            transform: rotate(34deg);
     position: absolute;
-    top: 25%;
-    right: -4%;
+    top: 28%;
+    right: -3.5%;
   }
   li .work-carousel-img-label-above.in {
     position: relative;
@@ -1811,7 +1811,7 @@ li .work-carousel-img:hover {
     position: relative;
   }
   .work-ttl {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
   }

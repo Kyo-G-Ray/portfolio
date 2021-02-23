@@ -1540,10 +1540,10 @@ body.hidden #hamburger span {
             height: 19%;
             background-color: $bgc_left;
             filter: brightness(0.7);
-            transform: rotate(31deg);
+            transform: rotate(34deg);
             position: absolute;
-            top: 25%;
-            right: -4%;
+            top: 28%;
+            right: -3.5%;
           }
         }
 
@@ -1626,7 +1626,7 @@ body.hidden #hamburger span {
     }
 
     &-ttl {
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 600;
       margin-bottom: 15px;
     }
