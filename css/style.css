@@ -415,12 +415,16 @@ body {
   }
   .header #hamburger:hover span:nth-child(2) {
     left: 15px;
+    -webkit-transition: .3s;
+    transition: .3s;
   }
   .header #hamburger span:nth-child(1) {
     top: 13px;
   }
   .header #hamburger span:nth-child(2) {
     top: 26px;
+    -webkit-transition: .3s;
+    transition: .3s;
   }
   .header #hamburger span:nth-child(3) {
     top: 39px;
