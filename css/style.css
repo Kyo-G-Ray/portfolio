@@ -989,6 +989,7 @@ html.hidden #hamburger span {
 .intro-h3 {
   font-size: 54px;
   font-weight: 500;
+  white-space: nowrap;
   background: -webkit-linear-gradient(-90deg, #282828, #86fde8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2369,11 +2370,13 @@ li .work-carousel-img:hover {
 }
 
 .contact .twitter-box-p {
+  white-space: nowrap;
   display: table;
 }
 
 .contact .twitter-box-p-a {
   color: #1a4dcb;
+  white-space: nowrap;
   position: relative;
 }
 
