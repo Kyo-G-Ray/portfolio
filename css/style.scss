@@ -156,7 +156,7 @@ body {
     height: 40px;
     position: fixed;
     top: 15px;
-    right: 2%;
+    right: 5%;
     cursor: pointer;
     z-index: 999;
   }
@@ -167,13 +167,13 @@ body {
     height: 2px;
     background: #333;
     position: absolute;
-    left: 10px;
+    // left: 10px;
     transition: 0.3s;
   }
 
-  #hamburger:hover span:nth-child(2) {
-    left: 15px;
-  }
+  // #hamburger:hover span:nth-child(2) {
+  //   left: 15px;
+  // }
 
   #hamburger span:nth-child(1) {
     top: 10px;
@@ -224,7 +224,7 @@ body {
       height: 2px;
       background: #333;
       position: absolute;
-      left: 10px;
+      // left: 10px;
       transition: 0.3s;
     }
 
