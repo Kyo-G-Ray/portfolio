@@ -361,6 +361,10 @@ body {
   transition: 0.3s;
 }
 
+.header #hamburger:hover span:nth-child(2) {
+  left: 15px;
+}
+
 .header #hamburger span:nth-child(1) {
   top: 10px;
 }

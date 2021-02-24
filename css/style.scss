@@ -171,9 +171,9 @@ body {
     transition: 0.3s;
   }
 
-  // #hamburger:hover span:nth-child(2) {
-  //   left: 15px;
-  // }
+  #hamburger:hover span:nth-child(2) {
+    left: 15px;
+  }
 
   #hamburger span:nth-child(1) {
     top: 10px;
