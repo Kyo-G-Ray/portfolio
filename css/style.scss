@@ -1910,7 +1910,8 @@ html.hidden #hamburger span {
     @media screen and (max-width: 962px) {
       width: 60%;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr 1fr 1fr;
+      // grid-template-columns: repeat(3, 1fr);
 
       &-part:nth-child(1) {
         grid-column-start: 1;
@@ -1955,7 +1956,8 @@ html.hidden #hamburger span {
     &-box {
       width: 90%;
       display: grid;
-      grid-template-columns: repeat(9, 1fr);
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+      // grid-template-columns: repeat(9, 1fr);
 
       &-part:nth-child(1) {
         width: 230px;
@@ -2049,7 +2051,8 @@ html.hidden #hamburger span {
     &-box {
       width: 90%;
       display: grid;
-      grid-template-columns: repeat(9, 1fr);
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+      // grid-template-columns: repeat(9, 1fr);
 
       &-part:nth-child(1) {
         width: 230px;

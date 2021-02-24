@@ -2098,8 +2098,8 @@ li .work-carousel-img:hover {
     width: 60%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
   .job-box-part:nth-child(1) {
     -ms-grid-column: 1;
@@ -2145,8 +2145,8 @@ li .work-carousel-img:hover {
     width: 90%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[9];
-        grid-template-columns: repeat(9, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
   .job-box-part:nth-child(1) {
     width: 230px;
@@ -2242,8 +2242,8 @@ li .work-carousel-img:hover {
     width: 90%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[9];
-        grid-template-columns: repeat(9, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
   .job-box-part:nth-child(1) {
     width: 230px;
