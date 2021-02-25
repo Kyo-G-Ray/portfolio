@@ -334,10 +334,12 @@ body {
   transition: 0.3s;
 }
 
-.header-ul-li-a:hover {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  color: #358b81;
+@media screen and (min-width: 769px) {
+  .header-ul-li-a:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #358b81;
+  }
 }
 
 .header #hamburger.in {
@@ -361,10 +363,12 @@ body {
   transition: 0.3s;
 }
 
-.header #hamburger:hover span:nth-child(2) {
-  margin-left: 15px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+@media screen and (min-width: 769px) {
+  .header #hamburger:hover span:nth-child(2) {
+    margin-left: 15px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
 }
 
 .header #hamburger span:nth-child(1) {
@@ -422,9 +426,15 @@ body {
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
+}
+
+@media screen and (max-width: 780px) and (min-width: 769px) {
   .header #hamburger:hover span:nth-child(2) {
     margin-left: 15px;
   }
+}
+
+@media screen and (max-width: 780px) {
   .header #hamburger span:nth-child(1) {
     top: 13px;
   }

@@ -142,8 +142,10 @@ body {
         transition: 0.3s;
 
         &:hover {
-          transition: 0.3s;
-          color: $main_color;
+          @media screen and (min-width: 769px) {
+            transition: 0.3s;
+            color: $main_color;
+          }
         }
       }
     }
@@ -171,8 +173,10 @@ body {
   }
 
   #hamburger:hover span:nth-child(2) {
-    margin-left: 15px;
-    transition: 0.3s;
+    @media screen and (min-width: 769px) {
+      margin-left: 15px;
+      transition: 0.3s;
+    }
   }
 
   #hamburger span:nth-child(1) {
@@ -231,7 +235,9 @@ body {
     }
 
     #hamburger:hover span:nth-child(2) {
-      margin-left: 15px;
+      @media screen and (min-width: 769px) {
+        margin-left: 15px;
+      }
     }
 
     #hamburger span:nth-child(1) {
