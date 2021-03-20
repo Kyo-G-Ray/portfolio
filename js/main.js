@@ -444,7 +444,7 @@ $(() => {
         legLeft.removeClass("out");
         legRight.removeClass("in");
       }
-      if(per > 0.16 && per <= 0.3){
+      else if(per <= 0.3){
         legLeft.addClass("out");
         legLeft.removeClass("in");
         legRight.removeClass("out");
