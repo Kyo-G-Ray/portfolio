@@ -313,7 +313,6 @@ $(() => {
 
   const carousel = $(".work-carousel");
   const carouselItem = $('.work-carousel-li');
-  console.log(carouselItem);
   const prev = $("#prev");
   const next = $("#next");
 
@@ -349,9 +348,9 @@ $(() => {
 
       // let imgScale = matrix['scale-x'];
       window.carouselMove = $('.work-carousel-li').width();
-      console.log(carouselMove);
-      return carouselMove;
-    },500);
+      // console.log(carouselMove);
+      // return carouselMove;
+    }, 500);
   }
     scaleFunc();
     
