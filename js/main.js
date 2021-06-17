@@ -7,15 +7,15 @@ $(() => {
   /* =================== */
   /* SP・Tabの hover消す  */
   /* =================== */
-  var touch = 'ontouchstart' in document.documentElement || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+  let touch = 'ontouchstart' in document.documentElement || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
 
   if(touch) {
     try {
-      for (var si in document.styleSheets) {
-        var styleSheet = document.styleSheets[si];
+      for (let si in document.styleSheets) {
+        let styleSheet = document.styleSheets[si];
         if (!styleSheet.rules) continue;
 
-        for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+        for (let ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
           if (!styleSheet.rules[ri].selectorText) continue;
 
           if (styleSheet.rules[ri].selectorText.match(':hover')) {
@@ -32,8 +32,9 @@ $(() => {
   /* =================== */
   /*   	  hamburger      */
   /* =================== */
-  let html = $("html");
-  let hamburger = $("#hamburger");
+  const html = $("html");
+  const hamburger = $("#hamburger");
+
   hamburger.click(function () {
     $(".header-nav").fadeToggle(600);
     hamburger.toggleClass("active");
@@ -99,37 +100,34 @@ $(() => {
   /* =================== */
   /*        wave         */ 
   /* =================== */
-  let smallLetter = $(".small-letter");
-  let sepalate = function(number){
-    // .tab-textを取得
-    var container = smallLetter.eq(number);
+  const smallLetter = $(".small-letter");
+
+  const sepalate = function(number){
+    // .small-letterを一つずつ取得
+    let container = smallLetter.eq(number);
     // コンテンツを取得
-    var content = $(container).html();
+    let content = $(container).html();
     // コンテンツから空白や改行を削除
-    var text = $.trim(content);
+    let text = $.trim(content);
     // 新しく挿入するhtmlの変数を定義
-    var newHtml = "";
+    let newHtml = "";
     // textを1文字ずつ分割してspanを追加
     text.split("").forEach(function(v){
       newHtml += '<p class=\"letter-wave\">' + v + '</p>';
     });
     // コンテナに作ったHTMLを挿入する
     $(container).html(newHtml);
-    
-    // $(".letter-wave").addClass("wave");
   }
-  sepalate(0);
-  sepalate(1);
-  sepalate(2);
-  sepalate(3);
-  sepalate(4);
-  sepalate(5);
-  sepalate(6);
+
+  for(let i = 0; i < smallLetter.length; i++){
+    sepalate(i);
+  }
 
   // main-titleウェーブ
-  let letterWave = $(".letter-wave");
+  const letterWave = $(".letter-wave");
+  
   function waveIn() {
-    var waveIn = setInterval(() => {
+    const waveIn = setInterval(() => {
       letterWave.addClass("wave");
       clearInterval(waveIn);
       waveOut();
@@ -137,7 +135,7 @@ $(() => {
   }
 
   function waveOut() {
-    var waveOut = setInterval(() => {
+    const waveOut = setInterval(() => {
       letterWave.removeClass("wave");
       clearInterval(waveOut);
       waveIn();
@@ -154,10 +152,10 @@ $(() => {
   let red   = parseInt(code.substring(1,3), 16);
   let green = parseInt(code.substring(3,5), 16);
   let blue  = parseInt(code.substring(5,7), 16);
-  let mainFirst = $(".main-title-first");
+  const mainFirst = $(".main-title-first");
 
   function countUpRed(){
-    var upRed = setInterval(function(){
+    const upRed = setInterval(function(){
       red += 9;
       mainFirst.css({
         "background":"-webkit-linear-gradient(-90deg, #282828, rgb("+ red +","+ green +","+ blue +"))",
@@ -172,7 +170,7 @@ $(() => {
   }
 
   function countDownRed(){
-    var down = setInterval(function(){
+    const down = setInterval(function(){
       red -= 9;
       mainFirst.css({
         "background":"-webkit-linear-gradient(-90deg, #282828, rgb("+ red +","+ green +","+ blue +"))",
@@ -188,7 +186,7 @@ $(() => {
   countUpRed();
 
   function countUpGreen(){
-    var upGreen = setInterval(function(){
+    const upGreen = setInterval(function(){
       green += 2;
       mainFirst.css({
         "background":"-webkit-linear-gradient(-90deg, #282828, rgb("+ red +","+ green +","+ blue +"))",
@@ -203,7 +201,7 @@ $(() => {
   }
 
   function countDownGreen(){
-    var down = setInterval(function(){
+    const down = setInterval(function(){
       green -= 2;
       mainFirst.css({
         "background":"-webkit-linear-gradient(-90deg, #282828, rgb("+ red +","+ green +","+ blue +"))",
@@ -219,7 +217,7 @@ $(() => {
   // countUpGreen();
 
   function countUpBlue(){
-    var upBlue = setInterval(function(){
+    const upBlue = setInterval(function(){
       blue += 6;
       mainFirst.css({
         "background":"-webkit-linear-gradient(-90deg, #282828, rgb("+ red +","+ green +","+ blue +"))",
@@ -234,7 +232,7 @@ $(() => {
   }
 
   function countDownBlue(){
-    var down = setInterval(function(){
+    const down = setInterval(function(){
       blue -= 6;
       mainFirst.css({
         "background":"-webkit-linear-gradient(-90deg, #282828, rgb("+ red +","+ green +","+ blue +"))",
@@ -287,7 +285,7 @@ $(() => {
   /* =================== */
 
   $(window).scroll(function(){
-    let jobBoxPart = $(".job-box-part");
+    const jobBoxPart = $(".job-box-part");
     let scroll = $(window).scrollTop();
 
     let slidein = function(data) {
@@ -313,28 +311,53 @@ $(() => {
   /*    carousel panel   */ 
   /* =================== */
 
-  let carousel = $(".work-carousel");
-  let carouselItem = carousel.find("li");
-  let prev = $("#prev");
-  let next = $("#next");
+  const carousel = $(".work-carousel");
+  const carouselItem = $('.work-carousel-li');
+  console.log(carouselItem);
+  const prev = $("#prev");
+  const next = $("#next");
 
   let length = carouselItem.length;
-  let carouselWidth = carouselItem.width();
-  let innerWidth = carouselWidth * length;
+  // let carouselWidth = carouselItem.outerWidth(true);
+  // let innerWidth = carousel.outerWidth(true);
   const time = 400;
-
+  
   let c = 1;
-
+  
   let flag = true;
-
+  
   // 画像サイズ切り替え
   let workCal = $(".work-carousel");
   let brilliant = workCal.find(".work-carousel-img");
   brilliant.eq(0).addClass("brilliant");
+  
+  function scaleFunc(){
+    setTimeout(function(){
+      // let scale = brilliant.css('transform');
+      // let values = scale.split('(')[1];
+      // values = values.split(')')[0];
+      // values = values.split(', ');
 
-  // 説明の切り替え
-  let workDes = $(".work-des");
-  let workDesBox = workDes.find(".work-des-box");
+      // let matrix = {
+      //   'scale-x':values[0],
+      //   'rotate-p':values[1],
+      //   'rotate-m':values[2],
+      //   'scale-y':values[3],
+      //   'transform-x':values[4],
+      //   'transform-y':values[5]
+      // };
+
+      // let imgScale = matrix['scale-x'];
+      window.carouselMove = $('.work-carousel-li').width();
+      console.log(carouselMove);
+      return carouselMove;
+    },500);
+  }
+    scaleFunc();
+    
+    // 説明の切り替え
+    let workDes = $(".work-des");
+    let workDesBox = workDes.find(".work-des-box");
 
   prev.click(function () {
     if(flag){
@@ -344,14 +367,14 @@ $(() => {
         workDesBox.eq(c - 1).addClass("out");
         carousel.stop().animate(
           {
-            // left: (-length + 1) * carouselWidth,
-            left: -innerWidth + carouselWidth,
+            left: (-length + 1) * carouselMove,
+            // left: -innerWidth + carouselMove,
           },
           time,
           function(){
             flag = true;
           }
-          );
+        );
         c = length;
         brilliant.eq(c - 1).addClass("brilliant");
         workDesBox.eq(c - 1).removeClass("out");
@@ -361,7 +384,7 @@ $(() => {
         workDesBox.eq(c - 1).addClass("out");
         carousel.stop().animate(
           {
-            left: (-c + 2) * carouselWidth,
+            left: (-c + 2) * carouselMove,
           },
           time,
           function(){
@@ -400,7 +423,7 @@ $(() => {
         workDesBox.eq(c - 1).addClass("out");
         carousel.stop().animate(
           {
-            left: -c * carouselWidth,
+            left: -c * carouselMove,
           },
           time,
           function(){
@@ -420,69 +443,74 @@ $(() => {
   /*     scroll walk     */ 
   /* =================== */
 
-  let legLeft = $(".leg-left");
-  let legRight = $(".leg-right");
-  let legSize = 65;
+  const legLeft = $(".leg-left");
+  const legRight = $(".leg-right");
+  const legSize = 65;
+
+  function alignLeg(leftOrUp, RightOrUp, inOrUp, outOrUp){
+    leftOrUp.removeClass(inOrUp);
+    RightOrUp.removeClass(outOrUp);
+  }
+
+  function upLeg(leftOrUp, RightOrUp, upClass){
+    leftOrUp.addClass(upClass);
+    RightOrUp.addClass(upClass);
+  }
+
+  function promoteRight(leftOrUp, RightOrUp, inOrUp, outOrUp){
+    leftOrUp.addClass(outOrUp);
+    leftOrUp.removeClass(inOrUp);
+    RightOrUp.removeClass(outOrUp);
+    RightOrUp.addClass(inOrUp);
+  }
+
+  function promoteLeft(leftOrUp, RightOrUp, inOrUp, outOrUp){
+    leftOrUp.removeClass(outOrUp);
+    leftOrUp.addClass(inOrUp);
+    RightOrUp.addClass(outOrUp);
+    RightOrUp.removeClass(inOrUp);
+  }
+
   function scrollWalk() {
     window.addEventListener("scroll", function(){
       let scrollValue = window.pageYOffset + window.innerHeight;
       
       let bodyBottom = document.body.offsetHeight;
-      
 
       let per = scrollValue / bodyBottom;
       let posi = window.innerHeight * per - legSize;
 
-
       legLeft.css({
         "top": posi + "px",
       });
+
       legRight.css({
         "top": posi + "px"
       });
-      if(per <= 0.16){
-        legLeft.removeClass("out");
-        legRight.removeClass("in");
+
+      if(per >= 0.95){
+        alignLeg(legLeft, legRight, 'in', 'out');
+      }
+      else if(per > 0.85){
+        promoteLeft(legLeft, legRight, 'in', 'out');
+      }
+      else if(per > 0.75){
+        promoteRight(legLeft, legRight, 'in', 'out');
+      }
+      else if(per > 0.6){
+        promoteLeft(legLeft, legRight, 'in', 'out');
+      }
+      else if(per > 0.45){
+        promoteRight(legLeft, legRight, 'in', 'out');
+      }
+      else if(per > 0.3){
+        promoteLeft(legLeft, legRight, 'in', 'out');
       }
       else if(per <= 0.3){
-        legLeft.addClass("out");
-        legLeft.removeClass("in");
-        legRight.removeClass("out");
-        // legRight.addClass("in");
+        promoteRight(legLeft, legRight, 'in', 'out');
       }
-      if(per > 0.3){
-        legLeft.removeClass("out");
-        legLeft.addClass("in");
-        legRight.addClass("out");
-        legRight.removeClass("in");
-      }
-      if(per > 0.45){
-        legLeft.addClass("out");
-        legLeft.removeClass("in");
-        legRight.removeClass("out");
-        legRight.addClass("in");
-      }
-      if(per > 0.6){
-        legLeft.removeClass("out");
-        legLeft.addClass("in");
-        legRight.addClass("out");
-        legRight.removeClass("in");
-      }
-      if(per > 0.75){
-        legLeft.addClass("out");
-        legLeft.removeClass("in");
-        legRight.removeClass("out");
-        legRight.addClass("in");
-      }
-      if(per > 0.85){
-        legLeft.removeClass("out");
-        // legLeft.addClass("in");
-        legRight.addClass("out");
-        legRight.removeClass("in");
-      }
-      if(per >= 0.95){
-        legLeft.removeClass("in");
-        legRight.removeClass("out");
+      else{
+        alignLeg(legLeft, legRight, 'in', 'out');
       }
     });
   }
@@ -497,17 +525,16 @@ $(() => {
   function onScroll(){
     if(lastPosition > height){
       if(lastPosition > offset){
-        legLeft.removeClass("up");
-        legRight.removeClass("up");
+        alignLeg(legLeft, legRight, 'up', 'up');
       }
       else{
-        legLeft.addClass("up");
-        legRight.addClass("up");
+        upLeg(legLeft, legRight, 'up');
       }
       offset = lastPosition;
     }
   }
-  let up = $(".up");
+  
+  const up = $(".up");
   window.addEventListener('scroll', function() {
     let scrollValue = window.pageYOffset + window.screen.height;
     let bodyBottom = document.body.offsetHeight;
@@ -518,50 +545,32 @@ $(() => {
       window.requestAnimationFrame(function() {
         onScroll(lastPosition);
         ticking = false;
-        if(per <= 0.16){
-          up.removeClass("out");
-          up.removeClass("in");
-        }
-        if(per > 0.16 && per <= 0.3){
-          up.addClass("out");
-          up.removeClass("in");
-          up.removeClass("out");
-          // legRight.addClass("in");
-        }
-        if(per > 0.3){
-          up.removeClass("out");
-          up.addClass("in");
-          up.addClass("out");
-          up.removeClass("in");
-        }
-        if(per > 0.45){
-          up.addClass("out");
-          up.removeClass("in");
-          up.removeClass("out");
-          up.addClass("in");
-        }
-        if(per > 0.6){
-          up.removeClass("out");
-          up.addClass("in");
-          up.addClass("out");
-          up.removeClass("in");
-        }
-        if(per > 0.75){
-          up.addClass("out");
-          up.removeClass("in");
-          up.removeClass("out");
-          up.addClass("in");
-        }
-        if(per > 0.85){
-          up.removeClass("out");
-          // legLeft.addClass("in");
-          up.addClass("out");
-          up.removeClass("in");
-        }
+
         if(per >= 0.95){
-          up.removeClass("in");
-          up.removeClass("out");
+          alignLeg(up, up, 'up', 'up');
         }
+        else if(per > 0.85){
+          promoteLeft(up, up, 'up', 'up');
+        }
+        else if(per > 0.75){
+          promoteRight(up, up, 'up', 'up');
+        }
+        else if(per > 0.6){
+          promoteLeft(up, up, 'up', 'up');
+        }
+        else if(per > 0.45){
+          promoteRight(up, up, 'up', 'up');
+        }
+        else if(per > 0.3){
+          promoteLeft(up, up, 'up', 'up');
+        }
+        else if(per > 0.16){
+          promoteRight(up, up, 'up', 'up');
+        }
+        else{
+          alignLeg(up, up, 'up', 'up');
+        }
+
       });
       ticking = true;
     }
