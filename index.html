@@ -15,7 +15,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@smmRSOW5myh4hyU">
     <meta name='keywords' content='山名田恭吾,FaiThLink,web制作,フリーランス,フリーランスエンジニア,プログラミング'>
-    <link rel="icon" type="image/x-icon" href="img/database.png">
+    <link rel="icon" type="image/x-icon" href="img//icon/database.png">
     <link rel="apple-touch-icon" sizes="180×180" href="img/database.png">
     <link
       href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
@@ -30,8 +30,8 @@
     <link rel="stylesheet" href="css/style.css" media="all" />
   </head>
   <body>
-    <img src="img/legLeft.png" alt="leftLeg" class="leg-left" />
-    <img src="img/legRight.png" alt="rightLeg" class="leg-right" />
+    <img src="img/leg/legLeft.png" alt="leftLeg" class="leg-left" />
+    <img src="img/leg/legRight.png" alt="rightLeg" class="leg-right" />
     <div class="inner">
       <div class="hamburger-action">
         <div class="hamburger-action-inner">
@@ -91,12 +91,12 @@
         <div id="slideshow" class="main-box">
           <div class="main-box-posi">
             <img
-              src="img/my_pic.jpg"
+              src="img/fv/my_pic.jpg"
               alt="きょうご"
               class="main-box-posi-img zoom"
             />
             <img
-              src="img/me_singing.jpg"
+              src="img/fv/me_singing.jpg"
               alt="きょうご"
               class="main-box-posi-img"
             />
@@ -171,77 +171,94 @@
           <div id="next" class="work-btn"></div>
           <ul class="work-carousel flex">
             <!-- 模写を付けるときはunderとaboveにinをつける -->
-            <li>
+            <li class="work-carousel-li">
+              <a href="https://www.queencleopatra7.com/">
+                <article class="work-carousel-img">
+                  <div class="work-carousel-img-label-under">
+                    <div class="work-carousel-img-label-above">
+                      <img src="img/matter/queencleopatra7.jpg" alt="Queencleopatra7" />
+                    </div>
+                  </div>
+                </article>
+              </a>
+            </li>
+            <li class="work-carousel-li">
+              <a href="https://shine-bright.jp/">
+                <article class="work-carousel-img">
+                  <div class="work-carousel-img-label-under">
+                    <div class="work-carousel-img-label-above">
+                      <img src="img/matter/shine.png" alt="株式会社シャインブライト" />
+                    </div>
+                  </div>
+                </article>
+              </a>
+            </li>
+            <li class="work-carousel-li">
+              <a href="https://losta.jp/">
+                <article class="work-carousel-img">
+                  <div class="work-carousel-img-label-under">
+                    <div class="work-carousel-img-label-above">
+                      <img src="img/matter/Losta Inc.png" alt="株式会社Losta" />
+                    </div>
+                  </div>
+                </article>
+              </a>
+            </li>
+            <li class="work-carousel-li">
               <a href="https://faithlink1205.com/">
                 <article class="work-carousel-img">
                   <div class="work-carousel-img-label-under in">
                     <div class="work-carousel-img-label-above in">
-                      <img src="img/team_port.png" alt="faithlink" />
+                      <img src="img/matter/team_port.png" alt="faithlink" />
                     </div>
                   </div>
                 </article>
               </a>
             </li>
-            <li>
+            <li class="work-carousel-li">
               <a href="https://salon.faithlink1205.com/">
                 <article class="work-carousel-img">
                   <div class="work-carousel-img-label-under in">
                     <div class="work-carousel-img-label-above in">
-                      <img src="img/salon.png" alt="架空サロン" />
+                      <img src="img/matter/salon.png" alt="架空サロン" />
                     </div>
                   </div>
                 </article>
               </a>
             </li>
-            <!-- <li>
-            <a href="">
-              <article class="work-carousel-img">
-                <div class="work-carousel-img-label-under">
-                  <div class="work-carousel-img-label-above">
-                    <img src="img/me2.jpg" alt="">
-                  </div>
-                </div>
-              </article>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <article class="work-carousel-img">
-                <div class="work-carousel-img-label-under">
-                  <div class="work-carousel-img-label-above">
-                    <img src="img/me2.jpg" alt="">
-                  </div>
-                </div>
-              </article>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <article class="work-carousel-img">
-                <div class="work-carousel-img-label-under in">
-                  <div class="work-carousel-img-label-above in">
-                    <img src="img/me2.jpg" alt="">
-                  </div>
-                </div>
-              </article>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <article class="work-carousel-img">
-                <div class="work-carousel-img-label-under">
-                  <div class="work-carousel-img-label-above">
-                    <img src="img/me2.jpg" alt="">
-                  </div>
-                </div>
-              </article>
-            </a>
-          </li> -->
           </ul>
 
           <div class="work-des">
+            <!-- 一つ目以外はoutクラス付与 -->
             <div class="work-des-posi">
               <div class="work-des-box">
+                <h3 class="work-ttl">
+                  Queencleopatra7様のコーポレートサイト
+                </h3>
+                <p class="work-des-p">
+                  エジプトの雰囲気を出来るだけ再現しました。
+                </p>
+              </div>
+
+              <div class="work-des-box out">
+                <h3 class="work-ttl">
+                  株式会社シャインブライト様のコーポレートサイト
+                </h3>
+                <p class="work-des-p">
+                  WordPressのオリジナルテーマを作成しました。
+                </p>
+              </div>
+
+              <div class="work-des-box out">
+                <h3 class="work-ttl">
+                  株式会社Losta様
+                </h3>
+                <p class="work-des-p">
+                  業務提携契約を結ばせていただきました。
+                </p>
+              </div>
+
+              <div class="work-des-box out">
                 <h3 class="work-ttl">
                   チーム・FaiThLinKのポートフォリオサイト
                 </h3>
@@ -249,6 +266,7 @@
                   チームで制作したポートフォリオサイトです。
                 </p>
               </div>
+
               <div class="work-des-box out">
                 <h3 class="work-ttl">架空サロンサイト</h3>
                 <p class="work-des-p">チームで制作した架空サロンサイトです。</p>

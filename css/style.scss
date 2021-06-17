@@ -1132,7 +1132,7 @@ html.hidden #hamburger span {
     position: absolute;
     top: 70px;
     left: 0;
-    width: 1950px;
+    // width: 1950px;
     margin: 0 0 100px 10%;
     justify-content: flex-start;
 
@@ -1144,6 +1144,9 @@ html.hidden #hamburger span {
       transition: 0.3s;
       // overflow: hidden;
       margin-right: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: relative;
 
       &-label-under.in {
@@ -1288,7 +1291,7 @@ html.hidden #hamburger span {
       height: 45px;
       border-radius: 50%;
       position: absolute;
-      top: 360px;
+      top: 380px;
       left: 37%;
       z-index: 90;
       transition: 0.3s;
@@ -1349,7 +1352,7 @@ html.hidden #hamburger span {
       position: absolute;
       top: 50px;
       left: 0;
-      width: 950px;
+      // width: 950px;
       margin: 0 0 100px 100px;
 
       li &-img {
@@ -1535,7 +1538,7 @@ html.hidden #hamburger span {
       position: absolute;
       top: 50px;
       left: 0;
-      width: 950px;
+      // width: 950px;
       margin: 0 0 0 70px;
       justify-content: flex-start;
 
@@ -1723,7 +1726,7 @@ html.hidden #hamburger span {
       position: absolute;
       top: 50px;
       left: 0;
-      width: 950px;
+      // width: 950px;
       margin: 0 0 0 60px;
       justify-content: flex-start;
 

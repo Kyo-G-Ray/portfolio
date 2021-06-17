@@ -1320,7 +1320,6 @@ html.hidden #hamburger span {
   position: absolute;
   top: 70px;
   left: 0;
-  width: 1950px;
   margin: 0 0 100px 10%;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -1337,6 +1336,18 @@ li .work-carousel-img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin-right: 120px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
@@ -1491,7 +1502,7 @@ li .work-carousel-img:hover {
     height: 45px;
     border-radius: 50%;
     position: absolute;
-    top: 360px;
+    top: 380px;
     left: 37%;
     z-index: 90;
     -webkit-transition: 0.3s;
@@ -1548,7 +1559,6 @@ li .work-carousel-img:hover {
     position: absolute;
     top: 50px;
     left: 0;
-    width: 950px;
     margin: 0 0 100px 100px;
   }
   li .work-carousel-img {
@@ -1725,7 +1735,6 @@ li .work-carousel-img:hover {
     position: absolute;
     top: 50px;
     left: 0;
-    width: 950px;
     margin: 0 0 0 70px;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -1907,7 +1916,6 @@ li .work-carousel-img:hover {
     position: absolute;
     top: 50px;
     left: 0;
-    width: 950px;
     margin: 0 0 0 60px;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
